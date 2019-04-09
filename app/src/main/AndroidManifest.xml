@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ahmedg2797.inventory">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_inventory"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_inventory"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AddActivity"
+            android:label="Add Product"
+            android:parentActivityName=".activities.MainActivity"/>
+        <activity android:name=".activities.DetailsActivity"
+            android:label="Details Product"
+            android:parentActivityName=".activities.MainActivity"/>
+    </application>
+
+</manifest>
